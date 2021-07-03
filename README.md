@@ -1,8 +1,17 @@
 # BooleanTypecast
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/boolean_typecast`. To experiment with that code, run `bin/console` for an interactive prompt.
+| *Author* | Surabhi Ojha |
+| *Version* | 0.1.0 |
+| *License* | Released under the MIT license. |
 
-TODO: Delete this and the text above, and describe your gem
+## Description
+
+Performs type casting from anything to true:TrueClass / false:FalseClass
+
+```ruby
+true.to_bool?  #=> true
+nil.to_bool?   #=> false
+```
 
 ## Installation
 
@@ -22,17 +31,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just `require 'boolean_typecast'` and then use it as:
 
-## Development
+### The typecast method to_bool?
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```ruby
+require 'boolean_typecast'
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Example true values
+true.to_bool? #=> true
+0.to_bool?    #=> true
+''.to_bool?   #=> true
+{}.to_bool?   #=> true
+0.0.to_bool?  #=> true
+
+# Example false values
+false.to_bool? #=> false
+nil.to_bool?   #=> false
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/boolean_typecast. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/surabhiojha12/boolean_typecast. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +60,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the BooleanTypecast project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/boolean_typecast/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the BooleanTypecast project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/surabhiojha12/boolean_typecast/blob/master/CODE_OF_CONDUCT.md).

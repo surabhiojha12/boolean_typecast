@@ -1,9 +1,5 @@
 # BooleanTypecast
 
-| *Author* | Surabhi Ojha |
-| *Version* | 0.1.0 |
-| *License* | Released under the MIT license. |
-
 ## Description
 
 Performs type casting from anything to true:TrueClass / false:FalseClass

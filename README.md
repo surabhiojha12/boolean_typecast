@@ -29,8 +29,6 @@ Or install it yourself as:
 
 Just `require 'boolean_typecast'` and then use it as:
 
-### The typecast method to_bool?
-
 ```ruby
 require 'boolean_typecast'
 
